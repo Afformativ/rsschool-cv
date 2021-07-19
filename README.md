@@ -1,1 +1,1 @@
-# rsschool-cv
+https://afformativ.github.io/rsschool-cv/
