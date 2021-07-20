@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My CV</title>
+        <link rel="stylesheet" type ="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+        <header class="title">           
+            <div class="title__photo">
+                <img src="images/Photo.jfif" alt="My photo" />
+              </div>
+              <div class="title__info">
+                <h1>Hrabar Oleksandr </h1>  
+                <h2>Kiyv, Ukraine</h2>   
+                <nav class="soclink">
+                    <ul>
+                        <li class="soclink__link">
+                            <a href="https://github.com/Afformativ" target="_blank"
+                              ><img src="images/github.svg" alt="github"
+                            /></a>
+                          </li>
+                          <li class="soclink__link">
+                            <a href="mailto:sasha.grabar.20.03.02@gmail.com"
+                              ><img src="images/email.svg" alt="email"
+                            /></a>
+                          </li>
+                          <li class="soclink__link"><a href="https://rs.school/js/" target="_blank">
+                            <img src="images/rs_school_js.svg" alt="github" />
+                          </a></li>                  
+                    </ul>
+                </nav>
+              </div>
+        </header>
+        
+        <div>
+            <main>  
+                <section>
+                    <ol>
+                        <li><b>Education</b><br>
+                            <u>Univeristy</u>: Taras Shevchenko National University of Kyiv<br>
+                            <u>Faculty</u>: Computer Science and Cybernetics<br>
+                            <u>Specialty</u>: Computer Science
+                        </li>
+                        <li><b>About me</b><br>
+                            I`m a winner of the mathematics and computer science competitions. Also i took part in competitions like Codeforces and ICPC.
+                            My strong skills are desire to develop, perseverance, deep knowledge of mathematics and physics.
+                        </li>
+                        <li><b>Experience</b><br>
+                            I have an experience in C++,C#,HTML,CSS,.NET,My SQL Managment Studio. Also in University i have 2 projects with using of C#,Database and .NET
+                            <ul><li><a href="https://github.com/Afformativ/SportWebApplication">Database first project</a></li>
+                                <li><a href="https://github.com/Afformativ/Lab2">Code first project</a></li>
+                        </ul>
+                            </li>
+                        <li><b>Code example</b><pre>
+                            function deleteScientist(id) {
+                                document.getElementById('ed-ns').innerHTML = "";
+                                fetch(virusscientis)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        for (let i = 0; i < data.length; i++) {
+                                            if (data[i].scientisId === id)
+                                                return data[i].id;
+                                        }
+                                    })
+                                    .then(data => {
+                                        if (data === undefined) {
+                                            fetch(`${scientists}/${id}`, {
+                                                method: 'DELETE'
+                                            })
+                                                .then(() => getScientists())
+                                                .catch(error => console.error('Unable to delete scientist.', error));
+                                        }
+                                        else {
+                                            document.getElementById('ed-ns').innerHTML = "There are disoveries with this scientist!";
+                                        }
+                                    })
+                            
+                            }
+                        </pre>
+                        </li>
+                        <li><b>Course certificates</b>
+                            <ul>
+                                <li><a href="https://coursera.org/share/de724eab144b811dfdf9ee01aad35ad9">HTML, CSS, and Javascript for Web Developers</a></li>
+                                <li><a href="https://coursera.org/share/10d93cf218096561b3ba8a53d84cb146">Mathematics for Machine Learning: Multivariate Calculus</a></li>
+                                <li><a href="https://coursera.org/share/07304fba9ba25431441804f02e8f0511">C++: Yellow belt</a></li>
+                                <li><a href="https://coursera.org/share/f2b43d22c75e15e5380a67d761144d71">Linear Algebra</a></li>
+                          </ul>
+                        </li>
+                        <li><b>Language skills</b><br>
+                            Ukrainian-native, Russian-fluent, English-B2(Have an IELTS certificate)
+                        </li>
+
+                    </ol>
+                </section>        
+                
+                
+            </main>
+        </div>
+        </div>
+        <footer class="footer">
+            <p>Hrabar Oleksandr 2021</p>
+        </footer>
+    </body>
+</html>
