@@ -51,34 +51,7 @@
                             <ul><li><a href="https://github.com/Afformativ/SportWebApplication">Database first project</a></li>
                                 <li><a href="https://github.com/Afformativ/Lab2">Code first project</a></li>
                         </ul>
-                            </li>
-                        <li><b>Code example</b><pre>
-                            function deleteScientist(id) {
-                                document.getElementById('ed-ns').innerHTML = "";
-                                fetch(virusscientis)
-                                    .then(response => response.json())
-                                    .then(data => {
-                                        for (let i = 0; i < data.length; i++) {
-                                            if (data[i].scientisId === id)
-                                                return data[i].id;
-                                        }
-                                    })
-                                    .then(data => {
-                                        if (data === undefined) {
-                                            fetch(`${scientists}/${id}`, {
-                                                method: 'DELETE'
-                                            })
-                                                .then(() => getScientists())
-                                                .catch(error => console.error('Unable to delete scientist.', error));
-                                        }
-                                        else {
-                                            document.getElementById('ed-ns').innerHTML = "There are disoveries with this scientist!";
-                                        }
-                                    })
-                            
-                            }
-                        </pre>
-                        </li>
+                            </li>                      
                         <li><b>Course certificates</b>
                             <ul>
                                 <li><a href="https://coursera.org/share/de724eab144b811dfdf9ee01aad35ad9">HTML, CSS, and Javascript for Web Developers</a></li>
